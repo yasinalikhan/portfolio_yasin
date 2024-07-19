@@ -1,0 +1,12 @@
+.service {
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+}
+
+/*-------------------------
+ responsive using media query
+--------------------------*/
+@media screen and (max-width: 650px){
+	margin-top: 0;
+}

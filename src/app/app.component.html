@@ -1,0 +1,18 @@
+<nav class="mb-5">
+  <div class="wrapper">
+      <div class="logo"><a href="#">Yasin Khan</a></div>
+      <input type="radio" name="slide" id="menu-btn">
+      <input type="radio" name="slide" id="cancel-btn">
+      <ul class="nav-link">
+         <label for="cancel-btn" class="btn cancel-btn"><i class="fa fa-times"></i></label>
+          <li><a routerLink="home" routerLinkActive="active" id="home">Home</a></li>
+          <li><a routerLink="aboutme" routerLinkActive="active">AboutMe</a></li>
+          <li><a routerLink="project" routerLinkActive="active">Exprience</a></li>
+          <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+  </div>
+</nav>
+<br><br>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

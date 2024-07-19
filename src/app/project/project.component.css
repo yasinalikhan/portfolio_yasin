@@ -1,0 +1,21 @@
+.project {
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	/* background-image: linear-gradient(to right,grey,brown); */
+}
+
+.intern{
+	border-bottom: 3px solid black;
+}
+
+/*-------------------------
+ responsive using media query
+--------------------------*/
+@media screen and (max-width: 650px) {
+	.link_button{
+		margin-bottom: 50px;
+		margin-left: 25px;
+		margin-top: 20px;
+	}
+}

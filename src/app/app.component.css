@@ -1,0 +1,151 @@
+/* nav {
+	width: 100%;
+}
+.navbar-brand {
+	margin-left: 6rem;
+	color: pink;
+	font-size: 25px;
+	font-weight: 900;
+	cursor: pointer;
+}
+#nvbr {
+	margin-right: 6rem;
+}
+
+#nvbr ul li {
+	margin-right: 3rem;
+}
+.nav-link {
+	font-size: 20px;
+	font-weight: 800;
+}
+.navbar-toggler-icon {
+	color: darkblue;
+}
+.active {
+	color: red;
+} */
+
+
+nav {
+    background: #242526;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 55px;
+   
+
+}
+
+nav .wrapper {
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.wrapper .logo a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.wrapper .nav-link {
+    display: inline-flex;
+}
+
+.nav-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link li a:hover {
+    background: #3a3b3c;
+}
+.nav-link .mobile-item {
+    display: none;
+}
+
+.wrapper .btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper .btn.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.wrapper input {
+        display: none;
+    }
+
+/*-------------------------
+ responsive using media query
+--------------------------*/
+@media screen and (max-width: 650px) {
+    .wrapper .btn {
+        display: block;
+    }
+
+    .wrapper .nav-link {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        background: #242526;
+        display: block;
+        top: 0;
+        left:-100%;
+        overflow-y: auto;
+        line-height: 50px;
+        padding: 50px 10px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    #menu-btn:checked ~ .nav-link{
+        left: 0%;
+    }
+
+    #menu-btn:checked ~ .btn #menu-btn {
+        display: none;
+    }
+
+    .nav-link::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .nav-link li {
+        margin: 15px 10px;
+    }
+
+    .nav-link li a {
+        padding: 0 20px;
+        display: block;
+        font-size: 20px;
+    }
+}
