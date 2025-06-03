@@ -23,6 +23,8 @@ jobs:
 
       - name: Build Angular app
         run: npm run build -- --base-href=/portfolio_yasin/
+        env:
+             NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
